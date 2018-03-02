@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气app</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/tianqi.css	">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="icon" type="image/x-icon"  href="img/logo.ico">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+         <!-- 当前的信息 -->
+	<section id="now">
+	     <!-- 当前城市 -->
+		<h1 class="now_city">
+			<span class="address_icon">
+				&#xe604;
+			</span>
+			<span class="now_city_name">
+				太原
+			</span>
+		</h1>
+		<!-- 当前空气质量 -->
+		<div class="now_air">
+			<h1>空气</h1>
+			<h2>良</h2>
+		</div>
+			<!-- 当前温度	 -->
+		<h2 class="nowtemp">
+			<span>-3</span>°
+		</h2>
+		<div class="wether">
+		</div>
+		<!-- 当前天气情况 -->
+
+		<div class="condition">
+			<span>晴</span>
+		</div>
+		<!-- 当前风级 -->
+		<div class="wind">
+			<span class=now_wind>北风</span>
+			<span class=now_wind_level>3</span>级
+		</div>
+		<!-- 提示框 -->
+		<h2 class="tishi">天气冷了注意保暖</h2>	
+	</section>
+	<!-- 未来两天信息 -->
+ 	<section id="future">
+		<div class="future_box today">
+			<div class="future_top">
+				<span class="future_date">今天</span>
+				<p>
+				<span class="today_higtem">4</span>/<span class="today_lowtemp">-10</span>°C
+				</p>
+			</div>
+			<div class="future_top">
+				<span class="today_whether">
+					多云
+				</span>
+				<div class="today_image">
+					<img src="img/1.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="future_box tomorrow">
+			<div class="future_top">
+				<span class="future_date">今天</span>
+				<p>
+				<span class="today_higtem">4</span>/<span class="today_lowtemp">-10</span>°C
+				</p>
+			</div>
+			<div class="future_top">
+				<span class="today_whether">
+					多云
+				</span>
+				<div class="today_image">
+					<img src="img/1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 未来24小时的信息 -->
+	<ul id="hours">
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span class="hours_temp1">-8</span>°
+			</h2>
+		</li>
+	</ul>
+	<!-- 未来一周的天气情况 -->
+	<ul id="week_weather">
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+		<li>
+			<h1 class="week_time">
+				<span class="week_month">02</span>/<span class="week_day">06</span>
+			</h1>
+			<h3 class="weather_condition">
+				多云转晴
+			</h3>
+			<div class="weather_image">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="day_hightemp">4</h2>
+			<h4 class="day_lowtemp">14</h4>
+			<h5 class="week_wind">西北风</h5>
+			<p class="hours_level">
+				<span class="hours_temp3">3</span>级
+			</p>
+		</li>
+	</ul>
+	<!-- 城市 -->
+	<main id="citys">
+		<header>
+			<input type="text" class="search" placeholder="请输入搜索内容">
+			<h2 class="btn">
+					取消
+			</h2>
+		</header>
+		<!-- 内容 -->
+		<div class="neirong_items">
+			<div class="neirong_head">
+			热门城市	
+			</div>
+			<div class="neirong_bottom"> 
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+				</div>
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+				</div>
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+				</div>
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+				</div>
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+				</div>
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+				</div>
+			</div>
+
+		</div>
+		<div class="neirong_items">
+			<div class="neirong_head">
+			贵州	
+			</div>
+			<div class="neirong_bottom"> 
+				<div class="neirong_bottom1">
+					<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+				</div>
+				
+			 </div>
+			 <div class="neirong_items">
+				<div class="neirong_head">
+				河南	
+				</div>
+				<div class="neirong_bottom"> 
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+					<div class="neirong_bottom1">
+						<h1 class="neirong_bottom_item">太原</h1>
+					</div>
+				</div>
+				
+			 </div>
+
+	</main>
+</body>
+</html>
+<!-- 
+设计稿：750*1334  100*100
+iphone8:375*667   50*50
+i7 plus:414*736 	55.2*55.2
+
+
+1物理像素=1逻辑像素
+单位：1rem（根据根节点的字体大小来变化）
+1rem=100px
+750  fontsize:100px
+375   1rem=50px
+414   1rem=55.2px
+1em=根据当前元素字体大小
+ -->
